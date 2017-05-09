@@ -1,0 +1,8 @@
+rootProject.name = 'Casque'
+include ':react-native-maps'
+project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/android')
+include ':react-native-select-contact-android'
+project(':react-native-select-contact-android').projectDir = new File(settingsDir, '../node_modules/react-native-select-contact-android/android')
+include ':app'
+include ':react-native-android-contactpicker'
+project(':react-native-android-contactpicker').projectDir = new File(settingsDir, '../node_modules/react-native-android-contactpicker/android')
