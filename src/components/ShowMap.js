@@ -111,7 +111,8 @@ export default class ShowMap extends Component {
 
  fetchData(obj,text)
   {
-    var API_KEY='AIzaSyDpf8iGh9BovrZtiN3YB8M5yNi0Z2APPaQ';
+    var API_KEY='';
+    
     var url='https://maps.googleapis.com/maps/api/directions/json?origin='+obj.latitude+','+obj.longitude+'&destination='+text+'&key='+API_KEY;
     fetch(url,{method:'GET'}).then((response)=>response.json()) .catch((error)=>alert("There was an error. ")).then((responseData)=>{
           var cordinates=[];
